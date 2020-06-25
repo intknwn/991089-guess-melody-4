@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const WelcomeScreen = (props) => {
-  const {errorsCount, onWelcomeButtonClick} = props;
+const WelcomeScreen = ({errorsCount, onWelcomeButtonClick}) => {
 
   return (
     <section className="welcome">
