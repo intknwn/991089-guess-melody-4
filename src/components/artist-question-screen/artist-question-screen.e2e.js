@@ -38,6 +38,7 @@ it(`Callback data-object matches the user answer`, () => {
   const screen = shallow(<ArtistQuestionScreen
     onAnswer={onAnswer}
     question={question}
+    renderPlayer={() => {}}
   />);
 
   const answerInputs = screen.find(`input`);
