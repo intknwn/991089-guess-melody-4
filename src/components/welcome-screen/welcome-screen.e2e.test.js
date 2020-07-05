@@ -12,7 +12,7 @@ it(`Welcome button click`, () => {
 
   const welcomeScreen = shallow(
       <WelcomeScreen
-        errorsCount={3}
+        maxMistakes={3}
         onWelcomeButtonClick={onWelcomeButtonClick}
       />
   );
