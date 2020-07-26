@@ -12,8 +12,11 @@ describe(`Button changes it's apperance on:`, () => {
         <AudioPlayer
           src={``}
           isPlaying={true}
+          isLoading={false}
           onPlayButtonClick={() => {}}
-        />
+        >
+          <audio />
+        </AudioPlayer>
     );
 
     const button = player.find(`button`);
@@ -26,8 +29,11 @@ describe(`Button changes it's apperance on:`, () => {
         <AudioPlayer
           src={``}
           isPlaying={false}
+          isLoading={true}
           onPlayButtonClick={() => {}}
-        />
+        >
+          <audio />
+        </AudioPlayer>
     );
 
     const button = player.find(`button`);
